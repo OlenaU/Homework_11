@@ -1,0 +1,172 @@
+* { 
+    box-sizing: border-box;
+  }
+
+html {
+  background-color: #EFEFEF;
+}
+
+body {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; 
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 0px; 
+    min-height: 100vh;
+    width: 70vw;
+    min-width: 600px;
+    max-width: 1200px;
+    background: white;
+    overflow: auto;
+    font-size: 14px;
+}
+
+header {
+    background: white;
+    margin-bottom: 0px;
+}
+
+#topmenu {
+  font-size: 0.7rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+  margin: 0px;
+}
+
+.btn {
+  font-size: 1em;  
+}
+
+.price {
+  font-size: 0.8rem;
+  color: red;
+  padding-bottom: 3px;
+}
+
+.card-title {
+  margin: 2px;
+  padding-top: 1px;
+  padding-bottom:1px;
+  font-size: 1rem;
+}
+
+.card-body {
+  margin: 0px;
+}
+
+#shirts {
+    width: 100%;
+    min-width: 500px;
+    max-width: 1200px;
+    object-fit: cover;
+}
+
+.container2 {
+    margin:0px auto;
+    }
+
+ 
+.card1 {
+    grid-area: card1;
+  }
+.card2 {
+    grid-area: card2;
+  }
+.card3 {
+    grid-area: card3;
+  }
+.card4 {
+    grid-area: card4;
+  }
+.card5 {
+    grid-area: card5;
+  }
+.card6 {
+    grid-area: card6;
+  }
+.card7 {
+    grid-area: card7;
+  }
+.card8 {
+    grid-area: card8;
+  }
+  
+.grid1 {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "card1 card2 card3 card4"
+                         "card5 card6 card7 card8";
+  }
+  
+  /* custom class for background*/
+  .navbar-customclass {
+      background-color: black;
+  }
+ 
+  /* navigation link text color */
+  .navbar-customclass .navbar-nav .nav-link {
+      color: rgba(255,255,255,.6);
+  }
+  /* navigation links anchor hover and active styles */
+  .navbar-customclass .nav-item.active .nav-link,
+  .navbar-customclass .nav-item:hover .nav-link {
+      color: #ffffff;
+  }
+  
+  .navbar-customclass .navbar-nav .nav-link {
+      color: white;
+  }
+  
+  .navbar-customclass .nav-item.active .nav-link,
+  .navbar-customclass .nav-item:hover .nav-link {
+      color: grey;
+  }
+  
+  .container3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "empty1 callus empty2";
+    height: 100px;
+  }
+  
+  .empty1 {
+    grid-area: empty1; 
+  }
+  
+  .callus { 
+    grid-area: callus;
+    font-size: 0.9rem;
+  }
+
+  .time {
+    font-size: 0.6rem;
+  }
+
+  .price {
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0px;
+  }
+  
+  .empty2 {
+     grid-area: empty2; 
+    }
+
+  .bottom {
+    font-size: 0.7rem;
+  }
+  
